@@ -3,7 +3,7 @@ package Sp3Project;
 
 import java.util.Scanner;
 //Association
-public class Shop{
+public class Shop extends ProductList{
 //    ArrayList<ProductName> foodlist=new ArrayList<>();
    // ArrayList<CustomerOrder> Order=new ArrayList<>();
 //    ArrayList<FoodStatus> foodcustomer=new ArrayList<>();
@@ -31,7 +31,15 @@ public class Shop{
                      select4 = cloths.nextInt();
                     switch(select4){
                         case 1:
-                        
+                            AddProductCloth();
+                          
+                            break;
+                         case 2:
+                            ReselectProductCloth();
+                          
+                            break;
+                          case 3:
+                            DelectProductCloth();
                           
                             break;
                         case 0:
