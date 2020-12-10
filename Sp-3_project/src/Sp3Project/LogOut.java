@@ -1,7 +1,7 @@
 
 package Sp3Project;
 
-public class LogOut extends MainClass {
+public class LogOut  {
     
     public void MainClass(){
         System.out.println("sdfghjkl");

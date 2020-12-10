@@ -26,11 +26,12 @@ public class MainClass{
 //
 //    }
 //        ArrayList<ProductName> ProductList=new ArrayList<>();
-        Shop Order=new Shop();
+//        Shop Ordr=new Shop();
+//        Ordr.Cloths();
         int select;
         
         Scanner scr=new Scanner(System.in);
-        do{
+         do{
             Menumain();
             select=scr.nextInt();
             switch (select){
@@ -39,7 +40,7 @@ public class MainClass{
                                         int select1;
                                           do{
                                              CastomarSinginFrom();
-                                             MenuRestuarant();
+//                                             MenuRestuarant();
                                              select1=scr.nextInt();
                                              switch(select1){
                                                  case 1:
@@ -64,76 +65,73 @@ public class MainClass{
                     
                 case 1:
                     
-                   
-                                                  int select2; 
-                                               do{
-                                              CastomarLoginFrom();
-                                              Customerorder();
-                                                 select2=scr.nextInt();
-                                                 switch(select2){
-                                                     case 1:
-                                                         Order.Cloths();
-                                                          int select3;
-                                                          do{
+                    CastomarLoginFrom();
+                    
+                    // CustomerOrder ri=new CustomerOrder();
+                     show();
+               case 0:
+                        System.out.println("Back");
+                        LogOut logout=new LogOut();
+                        logout.MainClass();
+                        break;  
+                default:
+                 break;
+                }
+            }while (select !=0);
+                                      
+                                                
+ }  
+ void show(){
+      Order();
+          int sel;
+             do{
+                     System.out.println("dfghjkl;");
+                     sel=scn.nextInt();
+                     
+                     switch(sel){
+                         case 1:
+                            Shop Order=new Shop();
+                             Order.Cloths();
+                              
+                         case 2:
+                            Shop Order2=new Shop();
+                            Order2.Shoes();
+                             break;
+                         case 3:
+                              Shop Order3=new Shop();
+                            Order3.Cosmetic();
+                             break;
+                     case 0:
+                        System.out.println("Back");
+                        LogOut logout=new LogOut();
+                        logout.MainClass();
+                        break;  
 
-                                                             select3=scr.nextInt();
-                                                             switch(select3){
-                                                                 case 1:
-                                                                     break;
 
-                                                                  case 2:                                                                  
-                                                                   case 3:                                                                 
-                                                                        break;     
-                                                                    case 4:                                                                             
-                                                                        break;    
-                                                                     case 0:
-                                                                        System.out.println("Back");
-                                                                        break;   
+                    default:
+                        break;
+                     }
+             }while(sel!=0);
+ 
+}
+  
+   
 
-                                                                    default:
-                                                                        break;
-                                                                       }
-                                                                    }while (select3 !=0);
-                                                                     break;
-                                                     case 2:
-                                                         
-                                                         break;
-                                                     case 3:
-                                                         
-                                                         break;
-                                                 case 0:
-                                                    System.out.println("Back");
-                                                    LogOut logout=new LogOut();
-                                                    logout.MainClass();
-                                                    break;  
-                                                     
-                                                    
-                                                default:
-                                                    break;
-                                            }
-                                        }while (select2 !=5);
-                                       break;
-                                                default:
-                                                    break;
-                                            }
-    }while(select !=3);
-    
-            }
-          
-     public static void MenuRestuarant(){
-        System.out.println("---Menu Restuarant---");
-        
-        System.out.println("1. Add food");
-        System.out.println("2. Edit food");
-        System.out.println("3. Delete food");
-        System.out.println("4. Print Customer Serial Number");
-        //System.out.println("5. Payment");
-        System.out.println("6.Show all food");
-        System.out.println("0.Back to menu main");
-        System.out.println("--------");
-        
-                  
-     }
+//     public static void MenuRestuarant(){
+//        System.out.println("---Menu Restuarant---");
+//        
+//        System.out.println("1. Add food");
+//        System.out.println("2. Edit food");
+//        System.out.println("3. Delete food");
+//        System.out.println("4. Print Customer Serial Number");
+//        //System.out.println("5. Payment");
+//        System.out.println("6.Show all food");
+//        System.out.println("0.Back to menu main");
+//        System.out.println("--------");
+//        
+//                  
+//     }
+   
     
     static void Menumain(){
         System.out.println("Wellcome My Shop");
@@ -143,17 +141,7 @@ public class MainClass{
     }
    void CastomarSinginFrom(){
        System.out.println("---Please fill up the from---");
-            
-//
-//                    String username = CastomarSingin.nextLine();
-//                    System.out.println("Inter gamil:");
-//                    String gamil = CastomarSingin.nextLine();
-//                    System.out.println("Inter gander:");
-//                    String gander = CastomarSingin.nextLine();
-//                    System.out.println("Inter age:");
-//                    String age = CastomarSingin.nextLine();
-//                    System.out.println("Inter Password:");
-//                    String password = CastomarSingin.nextLine();
+          
                      try {
                         sc = new Scanner(System.in);
                         connect = ApiClient.getInstance();
@@ -169,25 +157,9 @@ public class MainClass{
                       preparedStatement.setString(3, sc.nextLine());
                          System.out.println("Inter your age:");
                       preparedStatement.setString(4, sc.nextLine());
-//                         System.out.println("Inter blood_group:");
-//                       preparedStatement.setString(4, sc.nextLine());
-//                         System.out.println("Inter gander:");
-//                       preparedStatement.setString(5, sc.nextLine());
-//                         System.out.println("Inter Weight:");
-//                       preparedStatement.setString(6, sc.nextLine());
+//                        
                        preparedStatement.execute();
 
-//                        if (result.next()) {
-//                           
-//                             System.out.println("id: " + result.getString("user_id"));
-//                              System.out.println("password: " + result.getString("username"));
-//                               System.out.println("id: " + result.getString("password"));
-//                           System.out.println("Wellcome Our Shop");
-////                           LogOut logout=new LogOut();
-////                           logout.MainClass();
-//                        }else{
-//                          System.out.println("Please Inter Your Correct Information !!!");
-//                          CastomarSinginFrom();
 //                          
 //                        }
 
@@ -206,7 +178,7 @@ public class MainClass{
                     //statement = connect.createStatement();
                     // result = statement.executeQuery("SELECT * FROM blood_donation.donor");
 
-                      preparedStatement = connect.prepareStatement("SELECT*FROM login WHERE user_name=? AND password=?;");
+                      preparedStatement = connect.prepareStatement("SELECT*FROM singin WHERE user_name=? AND password=?;");
                         System.out.println("Inter your user name:");
                        preparedStatement.setString(1, scn.nextLine());
                          System.out.println("Inter Password:");
@@ -214,14 +186,12 @@ public class MainClass{
                        
                         result = preparedStatement.executeQuery();
 
-                        if (result.next()) {
+                        while(result.next()) {
                             System.out.println("name: " + result.getString("user_name"));
                             System.out.println("age: " + result.getString("password"));
-                           System.out.println("Wellcome Our Shop");
-                        }else{
-                          System.out.println("Worng password !!!");
-                          System.out.println("Please Inter Correct Username AND Password !!!");
-                          CastomarLoginFrom();
+                            System.out.println("Wellcome Our Shop");
+                            
+
                           
                         }
 
@@ -233,21 +203,17 @@ public class MainClass{
 
     }
                    
-    static void Customerorder() {
+    static void Order() {
         System.out.println("---Customer Service");
-        System.out.println("1.Show all food // Cloths");
-        System.out.println("2.Order now// Shoes");
-        System.out.println("3.Show Oder Status//Cosmetic");
-          System.out.println("0.Log Out !!!");
+        System.out.println("1.Show all  Cloths");
+        System.out.println("2.Show all Shoes");
+        System.out.println("3.Show all Cosmetic");
+        System.out.println("0.Log Out !!!");
         
            
     }
     
     
-    public static void main(String[]args){
-      
-            MainClass main = new MainClass();
-                main.MainClas();
-}
+
 }
     

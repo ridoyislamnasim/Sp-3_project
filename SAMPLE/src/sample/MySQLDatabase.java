@@ -20,13 +20,13 @@ public class MySQLDatabase {
                sc = new Scanner(System.in);
             connect = ApiClient.getInstance();
          
-//            statement = connect.createStatement();
-//             result = statement.executeQuery("SELECT * FROM blood_donation.donor");
+            statement = connect.createStatement();
+            result = statement.executstatement = connect.createStatement();eQuery("select* FROM blood_donation.SELECT donor");
 
-            preparedStatement = connect.prepareStatement("SELECT*FROM donor WHERE username=?;");
-
-           preparedStatement.setString(1, sc.nextLine());
-            result = preparedStatement.executeQuery();
+//            preparedStatement = connect.prepareStatement("SELECT*FROM donor WHERE username=?;");
+//
+//           preparedStatement.setString(1, sc.nextLine());
+//            result = preparedStatement.executeQuery();
 
             while (result.next()) {
                 System.out.println("name: " + result.getString("username"));
@@ -41,6 +41,10 @@ public class MySQLDatabase {
 //          // ApiClient.close();
 //        }
 
+    }
+
+    private void eQuery(String select__from_blood_donationdonor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
