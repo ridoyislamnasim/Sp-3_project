@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class SelectedProduct {
-        private Connection connect = null;
+public class SelectedProduct{
+    private Connection connect = null;
     private Statement statement = null;
     private PreparedStatement preparedStatement = null;
     private ResultSet result = null;
@@ -20,17 +20,20 @@ public class SelectedProduct {
             connect = ApiClient.getInstance();
             preparedStatement = connect.prepareStatement("SELECT id,name,rate FROM addproduct;");
             result = preparedStatement.executeQuery();
-            System.out.println("Id: " + "Product name: " +"Rate: ");
+            System.out.println("Index" + "Product name:" +" Rate: ");
             while (result.next()) {
-                
-                System.out.println( result.getString("id")+'.'+"-----"+ result.getString("name")+"-----" + result.getString("rate"));
-                
+                 
+                System.out.println(result.getString("id")+'.'+"---"+ result.getString("name")+"----" + result.getString("rate"));             
             }
+
+        
 
         } catch (ClassNotFoundException | SQLException e) {
 
-        } 
-     
+        }
+
+       
      }    
+    
     
 }

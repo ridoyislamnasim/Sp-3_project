@@ -3,20 +3,8 @@ package Sp3Project;
 
 import java.util.Scanner;
 //Association
-public class Shop {
-//    ArrayList<ProductName> foodlist=new ArrayList<>();
-   // ArrayList<CustomerOrder> Order=new ArrayList<>();
-//    ArrayList<FoodStatus> foodcustomer=new ArrayList<>();
-//    ProductName  Food;                             
-//    public CustomerOrder CustomerOrder;
-//    public int SelectFood;
-//    private String deletefood;
-//  public void Shop(){
-//  }  
-//    
+public class Shop extends MainClass {   
   void Cloths(){
-     
-                         
   Scanner cloths=new Scanner(System.in);
                     int select4;
                     
@@ -29,7 +17,8 @@ public class Shop {
                     System.out.println("1.Add product:");
                     System.out.println("2.Selected product Show:");
                     System.out.println("3.Delect product:");
-                    System.out.println("0.Back");
+                    System.out.println("4.Back:");
+                    System.out.println("0.LogOut");
                      select4 = cloths.nextInt();
                     switch(select4){
                         case 1:
@@ -43,11 +32,15 @@ public class Shop {
                           System.out.println("Run");
                             break;
                           case 3:
-//                            DelectProductCloth();
-                          
+                             DelectProduct ridoy3 =new DelectProduct();
+                             ridoy3.DelectProduct();
                             break;
-                        case 0:
-                            
+                          case 4:
+                             show();
+                              break;
+                         case 0:
+                            LogOut logout=new LogOut();
+                            logout.MainClasslogout();
                             break;
                      
                     }
@@ -65,7 +58,8 @@ public class Shop {
                     System.out.println("1.Add product:");
                     System.out.println("2.Selected product Show:");
                     System.out.println("3.Delect product:");
-                    System.out.println("0.Back");
+                    System.out.println("4.Back:");
+                    System.out.println("0.LogOut");
                      select4 = shoes.nextInt();
                     switch(select4){
                         case 1:
@@ -77,11 +71,16 @@ public class Shop {
                              ridoy2.SelectedProductShow();
                             break;
                           case 3:
-//                            DelectProductCloth();
+                             DelectProduct ridoy3 =new DelectProduct();
+                              ridoy3.DelectProduct();
                           
                             break;
+                          case 4:
+                             show();
+                              break;
                         case 0:
-                            
+                            LogOut logout=new LogOut();
+                            logout.MainClasslogout();
                             break;
                      
                     }
@@ -100,7 +99,8 @@ public class Shop {
                     System.out.println("1.Add product:");
                     System.out.println("2.Selected product Show:");
                     System.out.println("3.Delect product:");
-                    System.out.println("0.Back");
+                    System.out.println("4.Back:");
+                    System.out.println("0.LogOut");
                      select4 = shoes.nextInt();
                     switch(select4){
                         case 1:
@@ -112,11 +112,16 @@ public class Shop {
                              ridoy2.SelectedProductShow();
                             break;
                           case 3:
-//                            DelectProductCloth();
+                              DelectProduct ridoy3 =new DelectProduct();
+                              ridoy3.DelectProduct();
                           
                             break;
+                         case 4:
+                             show();
+                              break; 
                         case 0:
-                            
+                            LogOut logout=new LogOut();
+                            logout.MainClasslogout();
                             break;
                      
                     }

@@ -9,17 +9,12 @@ import java.util.Scanner;
 //import java.sql.Statement;
 //import java.util.Scanner;
 
+//extends MainClass
 
-
-public class ProductList extends MainClass  {
-   
-//    public  Connection connect = null;
-//    public  Statement statement = null;
-//    public  PreparedStatement preparedStatement = null;
-//    public ResultSet result = null;
-//    Scanner scn = null;
+public class ProductList  extends MainClass {
+  
   public void AddProductCloth(){
-
+            
                     showdisplaycloth();
                     addcloth();
                } 
@@ -33,7 +28,7 @@ public void AddProductCosmetic(){
       
 }
 void showdisplayCosmetic(){
-            System.out.println("1.Makeup box (Price=$300)");
+                    System.out.println("1.Makeup box (Price=$300)");
                     System.out.println("2.Beauty Face Wash (Price=$250)");
                     System.out.println("3.Beauty Cream (Price=$200)");
                     System.out.println("4.Lip stick (Price=$110)");
@@ -52,7 +47,6 @@ void addsCosmetic(){
                              preparedStatement.execute();
                            } catch (ClassNotFoundException | SQLException e) {
                             System.out.println(e);} 
-//                            MainClass ridoy2 = new MainClass();
                             show();
                               
                             break;
@@ -116,7 +110,6 @@ void showdisplayshoes(){
                              preparedStatement.execute();
                            } catch (ClassNotFoundException | SQLException e) {
                             System.out.println(e);} 
-//                            MainClass ridoy2 = new MainClass();
                             show();
                               
                             break;
@@ -219,17 +212,6 @@ void showdisplayshoes(){
                     }
                     }while(select5 !=0);
 
-      }//end AddProductCloth
+      }
      
  }
-                       
-//      }
-//          
-//                     }while(select5 !=6);
-//                    
-//                    }
-
-//     void DelectProductCloth(){
-//         System.out.println("delect");
-//     }                         
-//                 

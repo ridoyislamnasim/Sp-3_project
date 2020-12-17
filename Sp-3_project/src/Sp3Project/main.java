@@ -5,6 +5,6 @@ public class main {
         public static void main(String[]args){
       
             MainClass main = new MainClass();
-                main.MainClas();
+                main.MainClass();
 }
 }
