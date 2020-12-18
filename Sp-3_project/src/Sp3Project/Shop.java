@@ -3,7 +3,8 @@ package Sp3Project;
 
 import java.util.Scanner;
 //Association
-public class Shop extends MainClass {   
+public class Shop extends MainClass {  
+    
   void Cloths(){
   Scanner cloths=new Scanner(System.in);
                     int select4;
