@@ -10,7 +10,7 @@ public class Shop extends MainClass {
                     
                     do{
                         
-                    System.out.println("T-Shart (Price=$100)");
+                    System.out.println("\nT-Shart (Price=$100)");
                     System.out.println("pant (Price=$150)");
                     System.out.println("Shari (Price=$100)");
                     System.out.println("Chap (Price=$10)");
@@ -19,6 +19,8 @@ public class Shop extends MainClass {
                     System.out.println("3.Delect product:");
                     System.out.println("4.Back:");
                     System.out.println("0.LogOut");
+                    System.out.println("Please Input Select Item Id:");
+
                      select4 = cloths.nextInt();
                     switch(select4){
                         case 1:
@@ -26,10 +28,9 @@ public class Shop extends MainClass {
                          ridoy.AddProductCloth();
                             break;
                          case 2:
-                               System.out.println("Run");
                              SelectedProduct ridoy2 = new SelectedProduct();
                              ridoy2.SelectedProductShow(); 
-                          System.out.println("Run");
+                       
                             break;
                           case 3:
                              DelectProduct ridoy3 =new DelectProduct();
@@ -51,7 +52,7 @@ public class Shop extends MainClass {
         int select4;
                     
                     do{      
-                    System.out.println("Loafers Shoes (Price=$300)");
+                    System.out.println("\nLoafers Shoes (Price=$300)");
                     System.out.println("Sports Shoes (Price=$250)");
                     System.out.println("Formal Shoes (Price=$200)");
                     System.out.println("Sandals (Price=$110)");
@@ -60,6 +61,8 @@ public class Shop extends MainClass {
                     System.out.println("3.Delect product:");
                     System.out.println("4.Back:");
                     System.out.println("0.LogOut");
+                    System.out.println("Please Input Select Item Id:");
+
                      select4 = shoes.nextInt();
                     switch(select4){
                         case 1:
@@ -92,7 +95,7 @@ public class Shop extends MainClass {
         int select4;
                     
                     do{      
-                    System.out.println("Makeup box (Price=$300)");
+                    System.out.println("\nMakeup box (Price=$300)");
                     System.out.println("Beauty Face Wash (Price=$250)");
                     System.out.println("Beauty Cream (Price=$200)");
                     System.out.println("Lip stick (Price=$110)");
@@ -101,6 +104,8 @@ public class Shop extends MainClass {
                     System.out.println("3.Delect product:");
                     System.out.println("4.Back:");
                     System.out.println("0.LogOut");
+                    System.out.println("Please Input Select Item Id:");
+
                      select4 = shoes.nextInt();
                     switch(select4){
                         case 1:

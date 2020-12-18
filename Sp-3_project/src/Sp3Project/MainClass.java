@@ -1,12 +1,10 @@
 package Sp3Project;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-
 
 public class MainClass{
     
@@ -120,7 +118,9 @@ public class MainClass{
                         if(result.next()) {
                             System.out.println("Wellcome Our Shop\n");                        
                         }else{
-                         System.out.println("Wrong password!!!\n");
+                                System.out.println("Wrong username and password!!!");  
+                                System.out.println("Please Inter Courrect username and password!!!\n"); 
+                                CastomarLoginFrom();
                              }
      
                      
@@ -138,15 +138,16 @@ public class MainClass{
         System.out.println("2.Show all Shoes");
         System.out.println("3.Show all Cosmetic");
         System.out.println("0.Log Out !!!");   
+        System.out.println("Please Input Select Item Id:");
            
     }
  static void Menumain(){
         System.out.println("\n Wellcome My Shop");
         System.out.println("1.Log in");
         System.out.println("2.Sing in");
+        System.out.println("Please Input Select Option Id:");
 
     } 
     
 
 }
-    
